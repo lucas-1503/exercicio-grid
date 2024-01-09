@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+    background-color:burlywood;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container h1{
+    font-size: 38px;
+    font-weight: bold;
+    color: brown;
+}
+
+nav {
+    color: brown;
+}
+
+.container li {
+    display: inline;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+article{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+}
+
+.conteudo img{
+    height: 250px;
+    margin-top: 16px;
+}
+
+
+section h2{
+    padding: 12px 0;
+    border-bottom: 2px solid greenyellow;
+    font-size: 26px;
+}
+
+.sobre-nos{
+    padding: 16px;
+    
+}
+
+.sobre-nos h2{
+    font-size: 26px;
+    
+}
+
+.sobre-nos p{
+    margin-top: 16px;
+    font-size: 20px;
+}
+    
+.informações li{
+    display: block;
+    padding: 8px 8px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+h3{
+    margin-top: 20px;
+    text-decoration: underline red 2px;
+    padding: 0 8px;
+}
+
+.informações p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+button{
+    background-color: greenyellow;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 7px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.produtos img{
+    max-width: 342px;
+    width: 100%;
+    padding: 8px 8px;
+}
+
+footer{
+    background-color: burlywood;
+    font-weight: bold;
+    display: block;
+    margin-top: 16px;
+    color: brown;
+}
+
+footer p{
+    margin-left: 500px;
+    width: 100%;
+}
+
+footer adress{
+    margin-left: 450px;
+}
