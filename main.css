@@ -10,6 +10,9 @@
     margin: 0 auto;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 header{
     background-color:burlywood;
@@ -42,8 +45,13 @@ nav {
     font-weight: bold;
 }
 
+.container li a{
+    color: brown;
+    text-decoration: none;
+}
+
 article{
-    max-width: 700px;
+    max-width: 1024px;
     width: 100%;
     display: flex;
 }
@@ -56,7 +64,7 @@ article{
 
 section h2{
     padding: 12px 0;
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 2px solid brown;
     font-size: 26px;
 }
 
@@ -65,9 +73,9 @@ section h2{
     
 }
 
-.sobre-nos h2{
+h2{
     font-size: 26px;
-    
+    color: brown;
 }
 
 .sobre-nos p{
@@ -84,8 +92,10 @@ section h2{
 
 h3{
     margin-top: 20px;
-    text-decoration: underline red 2px;
+    text-decoration: underline black 2px;
     padding: 0 8px;
+    font-size: 20px;
+    color: brown;
 }
 
 .informações p{
@@ -95,7 +105,7 @@ h3{
 }
 
 button{
-    background-color: greenyellow;
+    background-color:burlywood;
     padding: 3px;
     font-size: 12px;
     font-weight: bold;
@@ -119,16 +129,36 @@ button{
 footer{
     background-color: burlywood;
     font-weight: bold;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
     color: brown;
 }
 
-footer p{
-    margin-left: 500px;
-    width: 100%;
+@media screen and (max-width: 640px) {
+    
+    article{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos {
+        display: block;
+    }
 }
 
-footer adress{
-    margin-left: 450px;
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    .produtos {
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .container{
+        max-width: 90%;
+    }
 }
+
+
